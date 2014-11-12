@@ -14,31 +14,32 @@ var browserSync = require('browser-sync'),
 
 // Modernizr
 gulp.task('modernizr', function() {
-    gulp.src('./src/scripts/lib/modernizr.js')
+    return gulp.src('./src/scripts/lib/modernizr.js')
         .pipe(size({showFiles: true}))
         .pipe(gulp.dest('./dist/scripts'));
 });
 
 // Scripts
 gulp.task('lib', function() {
-  browserify({debug: true})
-    .require('./src/scripts/lib/bootstrap')
-    .require('./src/scripts/lib/jquery')
-    .require('./src/scripts/lib/lodash', {expose: 'underscore'})
-    .bundle()
-    .on('error', function(err) {
-        console.log('[browserify] ' + err.message);
-        this.emit('end');
-    })
-    .pipe(source('lib.js'))
-    .pipe(buffer())
-    .pipe(size({showFiles: true}))
-    .pipe(gulp.dest('./dist/scripts'));
+    return browserify({debug: true})
+        .require('jquery')
+        .require('lodash/dist/lodash.compat')
+        .bundle()
+        .on('error', function(err) {
+            console.log('[browserify] ' + err.message);
+            this.emit('end');
+        })
+        .pipe(source('lib.js'))
+        .pipe(buffer())
+        .pipe(size({showFiles: true}))
+        .pipe(gulp.dest('./dist/scripts'));
 });
 
 gulp.task('scripts', function() {
-    browserify({debug: true})
+    return browserify({debug: true})
         .add('./src/scripts/app.js')
+        .external('jquery')
+        .external('lodash/dist/lodash.compat')
         .bundle()
         .on('error', function(err) {
             console.log('[browserify] ' + err.message);
@@ -51,7 +52,7 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('scripts:dist', function() {
-    gulp.src('./dist/scripts/**/*.js')
+    return gulp.src('./dist/scripts/**/*.js')
         .pipe(uglify())
         .pipe(size({showFiles: true}))
         .pipe(gulp.dest('./dist/scripts'));
@@ -59,7 +60,7 @@ gulp.task('scripts:dist', function() {
 
 // Styles
 gulp.task('styles', function() {
-    gulp.src('./src/styles/app.scss')
+    return gulp.src('./src/styles/app.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({
             errLogToConsole: true
@@ -71,7 +72,7 @@ gulp.task('styles', function() {
 });
 
 gulp.task('styles:dist', function() {
-    gulp.src('./dist/styles/**/*.css')
+    return gulp.src('./dist/styles/**/*.css')
         .pipe(csso())
         .pipe(size({showFiles: true}))
         .pipe(gulp.dest('./dist/styles'))
@@ -97,5 +98,6 @@ gulp.task('watch', function() {
 });
 
 // Arrays
-gulp.task('default', ['modernizr', 'lib', 'scripts', 'styles', 'browser-sync', 'watch']);
+gulp.task('init', ['modernizr', 'lib', 'scripts', 'styles']);
+gulp.task('default', ['browser-sync', 'watch']);
 gulp.task('prod', ['scripts:dist', 'styles:dist']);
