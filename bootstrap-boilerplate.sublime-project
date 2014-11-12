@@ -1,0 +1,14 @@
+{
+	"folders":
+	[
+		{
+			"folder_exclude_patterns":
+			[
+				"dist",
+				"node_modules"
+			],
+			"follow_symlinks": true,
+			"path": "."
+		}
+	]
+}
