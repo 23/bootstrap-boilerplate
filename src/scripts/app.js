@@ -1,8 +1,6 @@
 'use strict';
 
-var $           = require('jquery'),
-    _           = require('lodash/dist/lodash.compat'),
-    behaviors   = require('./app/behaviors'),
+var behaviors   = require('./app/behaviors'),
     bootstrap   = require('bootstrap'),
     fastclick   = require('fastclick');
 

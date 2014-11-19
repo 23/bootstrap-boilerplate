@@ -368,23 +368,33 @@
 	],
 	"file_history":
 	[
-		"/Users/samloomes/Library/Caches/Cleanup At Startup/Transmit/DB021193-00DB-4492-9055-7DD548A06611/style.scss",
 		"/Users/samloomes/Sites/bootstrap-boilerplate/gulpfile.js",
-		"/Users/samloomes/Sites/bootstrap-boilerplate/src/scripts/app.js",
-		"/Users/samloomes/Sites/bootstrap-boilerplate/src/styles/app.scss",
-		"/Users/samloomes/Sites/bootstrap-boilerplate/index.php",
+		"/Users/samloomes/Sites/bootstrap-boilerplate/src/scripts/app/behaviors/example.js",
 		"/Users/samloomes/Sites/bootstrap-boilerplate/src/styles/bootstrap/_carousel.scss",
-		"/Users/samloomes/Sites/bootstrap-boilerplate/dist/scripts/app.js",
-		"/Users/samloomes/Sites/bootstrap-boilerplate/includes/_footer.php",
-		"/Users/samloomes/Sites/bootstrap-boilerplate/node_modules/gulp/CHANGELOG.md",
+		"/Users/samloomes/Sites/bootstrap-boilerplate/src/styles/bootstrap/_code.scss",
+		"/Users/samloomes/Sites/bootstrap-boilerplate/src/styles/bootstrap/_component-animations.scss",
+		"/Users/samloomes/Sites/bootstrap-boilerplate/fonts/bootstrap/glyphicons-halflings-regular.svg",
+		"/Users/samloomes/Sites/bootstrap-boilerplate/fonts/bootstrap/glyphicons-halflings-regular.woff",
+		"/Users/samloomes/Sites/bootstrap-boilerplate/src/scripts/app.js",
+		"/Users/samloomes/Sites/bootstrap-boilerplate/index.php",
+		"/Users/samloomes/Sites/bootstrap-boilerplate/src/scripts/app/behaviors.js",
 		"/Users/samloomes/Sites/bootstrap-boilerplate/package.json",
+		"/Users/samloomes/Sites/bootstrap-boilerplate/src/scripts/app/globals.js",
 		"/Users/samloomes/Sites/bootstrap-boilerplate/bootstrap-boilerplate.sublime-project",
+		"/Users/samloomes/Sites/bootstrap-boilerplate/src/styles/app.scss",
+		"/Users/samloomes/Sites/bootstrap-boilerplate/src/styles/_variables.scss",
+		"/Users/samloomes/Sites/bootstrap-boilerplate/includes/_header.php",
+		"/Users/samloomes/Sites/bootstrap-boilerplate/includes/_footer.php",
+		"/etc/hosts",
+		"/etc/apache2/extra/httpd-vhosts.conf",
+		"/Users/samloomes/Library/Caches/Cleanup At Startup/Transmit/DB021193-00DB-4492-9055-7DD548A06611/style.scss",
+		"/Users/samloomes/Sites/bootstrap-boilerplate/dist/scripts/app.js",
+		"/Users/samloomes/Sites/bootstrap-boilerplate/node_modules/gulp/CHANGELOG.md",
 		"/Users/samloomes/Sites/bootstrap-boilerplate/dist/scripts/lib.js",
 		"/Users/samloomes/Sites/bootstrap-boilerplate/src/scripts/lib/jquery.js",
 		"/Users/samloomes/Sites/bootstrap-boilerplate/src/scripts/lib/lodash.js",
 		"/Users/samloomes/Sites/bootstrap-boilerplate/.jshintrc",
-		"/Users/samloomes/Sites/bootstrap-boilerplate/src/scripts/lib/test.js",
-		"/Users/samloomes/Sites/bootstrap-boilerplate/includes/_header.php"
+		"/Users/samloomes/Sites/bootstrap-boilerplate/src/scripts/lib/test.js"
 	],
 	"find":
 	{
@@ -480,6 +490,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"context",
+			"fastclick",
+			"init",
 			"console",
 			"lodash",
 			"jquery",
@@ -604,10 +617,7 @@
 			"play",
 			"controls",
 			"initRandom",
-			"scroll",
-			"450",
-			"400",
-			"350"
+			"scroll"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -725,20 +735,44 @@
 		"selected_items":
 		[
 			[
-				"app",
-				"src/styles/app.scss"
+				"exam",
+				"src/scripts/app/behaviors/example.js"
 			],
 			[
-				"app.",
-				"src/scripts/app.js"
+				"exa",
+				"src/scripts/app/behaviors/example.js"
 			],
 			[
 				"index",
 				"index.php"
 			],
 			[
+				"ind",
+				"index.php"
+			],
+			[
 				"gulp",
 				"gulpfile.js"
+			],
+			[
+				"hea",
+				"includes/_header.php"
+			],
+			[
+				"foo",
+				"includes/_footer.php"
+			],
+			[
+				"head",
+				"includes/_header.php"
+			],
+			[
+				"app",
+				"src/styles/app.scss"
+			],
+			[
+				"app.",
+				"src/scripts/app.js"
 			],
 			[
 				"foot",
@@ -821,10 +855,6 @@
 				"src/styles/scss/modules/_nav.scss"
 			],
 			[
-				"head",
-				"includes/_header.php"
-			],
-			[
 				"mem",
 				"src/styles/scss/modules/_team.scss"
 			],
@@ -897,10 +927,6 @@
 				"dist/styles/css/global-rem.css"
 			],
 			[
-				"exam",
-				"src/scripts/app/behaviors/example.js"
-			],
-			[
 				"beh",
 				"src/scripts/app/behaviors.js"
 			],
@@ -911,10 +937,6 @@
 			[
 				"g",
 				"gulpfile.js"
-			],
-			[
-				"exa",
-				"src/scripts/app/behaviors/example.js"
 			],
 			[
 				"js",
@@ -953,20 +975,12 @@
 				"src/styles/scss/_imports.scss"
 			],
 			[
-				"foo",
-				"includes/_footer.php"
-			],
-			[
 				"fun",
 				"src/styles/scss/utilities/_functions.scss"
 			],
 			[
 				"funct",
 				"src/styles/scss/utilities/_functions.scss"
-			],
-			[
-				"hea",
-				"includes/_header.php"
 			],
 			[
 				"experiments.php",
@@ -1231,10 +1245,6 @@
 			[
 				"page",
 				"src/styles/scss/pages/_page-error.scss"
-			],
-			[
-				"asset-buck",
-				"includes/_asset-bucket.php"
 			]
 		],
 		"width": 0.0

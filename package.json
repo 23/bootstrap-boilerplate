@@ -8,7 +8,6 @@
     ]
   },
   "browserify-shim": {
-    "jquery": "global:$",
     "bootstrap": {
       "depends": [
         "jquery:jQuery"
