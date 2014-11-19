@@ -4,6 +4,7 @@ var browserSync = require('browser-sync'),
     browserify  = require('browserify'),
     gulp        = require('gulp'),
     csso        = require('gulp-csso'),
+    notify      = require("gulp-notify"),
     sass        = require('gulp-sass'),
     size        = require('gulp-size'),
     sourcemaps  = require('gulp-sourcemaps'),
@@ -26,13 +27,14 @@ gulp.task('lib', function() {
         .require('lodash/dist/lodash.compat')
         .bundle()
         .on('error', function(err) {
-            console.log('[browserify] ' + err.message);
             this.emit('end');
+            return notify().write(err);
         })
         .pipe(source('lib.js'))
         .pipe(buffer())
         .pipe(size({showFiles: true}))
-        .pipe(gulp.dest('./dist/scripts'));
+        .pipe(gulp.dest('./dist/scripts'))
+        .pipe(notify({message: 'Libs task complete'}));
 });
 
 gulp.task('scripts', function() {
@@ -42,13 +44,14 @@ gulp.task('scripts', function() {
         .external('lodash/dist/lodash.compat')
         .bundle()
         .on('error', function(err) {
-            console.log('[browserify] ' + err.message);
             this.emit('end');
+            return notify().write(err);
         })
         .pipe(source('app.js'))
         .pipe(buffer())
         .pipe(size({showFiles: true}))
-        .pipe(gulp.dest('./dist/scripts'));
+        .pipe(gulp.dest('./dist/scripts'))
+        .pipe(notify({message: 'Scripts task complete'}));
 });
 
 gulp.task('scripts:dist', function() {
@@ -62,13 +65,16 @@ gulp.task('scripts:dist', function() {
 gulp.task('styles', function() {
     return gulp.src('./src/styles/app.scss')
         .pipe(sourcemaps.init())
-        .pipe(sass({
-            errLogToConsole: true
-        }))
+        .pipe(sass())
+        .on('error', function(err) {
+            this.emit('end');
+            return notify().write(err);
+        })
         .pipe(sourcemaps.write())
         .pipe(size({showFiles: true}))
         .pipe(gulp.dest('./dist/styles'))
-        .pipe(reload({stream: true}));
+        .pipe(reload({stream: true}))
+        .pipe(notify({message: 'Styles task complete'}));
 });
 
 gulp.task('styles:dist', function() {

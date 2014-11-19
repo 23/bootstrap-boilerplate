@@ -255,16 +255,16 @@
 		"selected_items":
 		[
 			[
+				"bs3",
+				"Snippet: bs3-carousel"
+			],
+			[
 				"bs3	",
 				"Snippet: bs3-carousel"
 			],
 			[
 				"bs3-	",
 				"Snippet: bs3-carousel"
-			],
-			[
-				"bs3",
-				"Snippet: bs3-form"
 			],
 			[
 				"snippet",
@@ -368,13 +368,27 @@
 	],
 	"file_history":
 	[
-		"/Users/samloomes/Sites/bootstrap-boilerplate/includes/_header.php",
+		"/Users/samloomes/Library/Caches/Cleanup At Startup/Transmit/DB021193-00DB-4492-9055-7DD548A06611/style.scss",
 		"/Users/samloomes/Sites/bootstrap-boilerplate/gulpfile.js",
-		"/Users/samloomes/Sites/bootstrap-boilerplate/index.php"
+		"/Users/samloomes/Sites/bootstrap-boilerplate/src/scripts/app.js",
+		"/Users/samloomes/Sites/bootstrap-boilerplate/src/styles/app.scss",
+		"/Users/samloomes/Sites/bootstrap-boilerplate/index.php",
+		"/Users/samloomes/Sites/bootstrap-boilerplate/src/styles/bootstrap/_carousel.scss",
+		"/Users/samloomes/Sites/bootstrap-boilerplate/dist/scripts/app.js",
+		"/Users/samloomes/Sites/bootstrap-boilerplate/includes/_footer.php",
+		"/Users/samloomes/Sites/bootstrap-boilerplate/node_modules/gulp/CHANGELOG.md",
+		"/Users/samloomes/Sites/bootstrap-boilerplate/package.json",
+		"/Users/samloomes/Sites/bootstrap-boilerplate/bootstrap-boilerplate.sublime-project",
+		"/Users/samloomes/Sites/bootstrap-boilerplate/dist/scripts/lib.js",
+		"/Users/samloomes/Sites/bootstrap-boilerplate/src/scripts/lib/jquery.js",
+		"/Users/samloomes/Sites/bootstrap-boilerplate/src/scripts/lib/lodash.js",
+		"/Users/samloomes/Sites/bootstrap-boilerplate/.jshintrc",
+		"/Users/samloomes/Sites/bootstrap-boilerplate/src/scripts/lib/test.js",
+		"/Users/samloomes/Sites/bootstrap-boilerplate/includes/_header.php"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -466,6 +480,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"console",
+			"lodash",
+			"jquery",
+			"bootstrap",
+			"jquery",
+			"lib",
+			"libb",
+			"bootstrap",
+			"jquery",
+			"require",
 			"watch",
 			"./",
 			"connect",
@@ -583,17 +607,7 @@
 			"scroll",
 			"450",
 			"400",
-			"350",
-			"300",
-			"349.23",
-			"293.66",
-			"261.63",
-			"250",
-			"200",
-			"150",
-			"100",
-			"example",
-			"Example"
+			"350"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -711,16 +725,36 @@
 		"selected_items":
 		[
 			[
-				"index",
-				"index.html"
-			],
-			[
-				"app.scs",
+				"app",
 				"src/styles/app.scss"
 			],
 			[
 				"app.",
 				"src/scripts/app.js"
+			],
+			[
+				"index",
+				"index.php"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"foot",
+				"includes/_footer.php"
+			],
+			[
+				"footer",
+				"includes/_footer.php"
+			],
+			[
+				"jquery",
+				"src/scripts/lib/jquery.js"
+			],
+			[
+				"app.scs",
+				"src/styles/app.scss"
 			],
 			[
 				"vari",
@@ -863,20 +897,12 @@
 				"dist/styles/css/global-rem.css"
 			],
 			[
-				"gulp",
-				"gulpfile.js"
-			],
-			[
 				"exam",
 				"src/scripts/app/behaviors/example.js"
 			],
 			[
 				"beh",
 				"src/scripts/app/behaviors.js"
-			],
-			[
-				"footer",
-				"includes/_footer.php"
 			],
 			[
 				"ex",
@@ -889,10 +915,6 @@
 			[
 				"exa",
 				"src/scripts/app/behaviors/example.js"
-			],
-			[
-				"foot",
-				"includes/_footer.php"
 			],
 			[
 				"js",
@@ -921,10 +943,6 @@
 			[
 				"pro",
 				"src/styles/scss/modules/_product.scss"
-			],
-			[
-				"app",
-				"src/scripts/app.js"
 			],
 			[
 				"impor",
@@ -1216,10 +1234,6 @@
 			],
 			[
 				"asset-buck",
-				"includes/_asset-bucket.php"
-			],
-			[
-				"asset-buc",
 				"includes/_asset-bucket.php"
 			]
 		],
