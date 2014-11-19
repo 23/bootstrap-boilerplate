@@ -52,4 +52,3 @@
     <meta name="msapplication-config" content="images/favicons/browserconfig.xml">
 </head>
 <body>
-    <div class="container">

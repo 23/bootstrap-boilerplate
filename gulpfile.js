@@ -88,7 +88,7 @@ gulp.task('styles:dist', function() {
 // BrowserSync
 gulp.task('browser-sync', function() {
     browserSync({
-        proxy: 'localhost/bootstrap-boilerplate'
+        proxy: 'bootstrap-boilerplate.dev'
     });
 });
 
@@ -104,6 +104,5 @@ gulp.task('watch', function() {
 });
 
 // Arrays
-gulp.task('init', ['modernizr', 'lib', 'scripts', 'styles']);
-gulp.task('default', ['browser-sync', 'watch']);
+gulp.task('default', ['modernizr', 'lib', 'scripts', 'styles', 'browser-sync', 'watch']);
 gulp.task('prod', ['scripts:dist', 'styles:dist']);
