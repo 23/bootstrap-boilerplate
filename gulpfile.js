@@ -99,7 +99,7 @@ gulp.task('browser-sync-reload', function () {
 // Watch
 gulp.task('watch', function() {
     gulp.watch('**/*.php', ['browser-sync-reload']);
-    gulp.watch('src/scripts/**/*.js', ['scripts', 'browser-sync-reload']);
+    gulp.watch('src/scripts/**/*.js', ['scripts', browserSync.reload]);
     gulp.watch('src/styles/**/*.scss', ['styles']);
 });
 
