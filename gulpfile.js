@@ -23,6 +23,7 @@ gulp.task('modernizr', function() {
 // Scripts
 gulp.task('lib', function() {
     return browserify({debug: true})
+        .require('fastclick')
         .require('jquery')
         .require('lodash/dist/lodash.compat')
         .bundle()
@@ -40,6 +41,7 @@ gulp.task('lib', function() {
 gulp.task('scripts', function() {
     return browserify({debug: true})
         .add('./src/scripts/app.js')
+        .external('fastclick')
         .external('jquery')
         .external('lodash/dist/lodash.compat')
         .bundle()

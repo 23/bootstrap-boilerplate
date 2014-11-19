@@ -2,9 +2,12 @@
 
 var $           = require('jquery'),
     _           = require('lodash/dist/lodash.compat'),
-    bootstrap   = require('bootstrap');
+    behaviors   = require('./app/behaviors'),
+    bootstrap   = require('bootstrap'),
+    fastclick   = require('fastclick');
 
-function App() {
-}
+// Fastclick
+fastclick(document.body);
 
-module.exports = App;
+// Behaviors
+behaviors.init();
